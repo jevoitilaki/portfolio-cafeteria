@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans+Thai:wght@100..800&display=swap');
+
+html{
+  font-size: 16px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #EDE0D4;
+  font-family: 'Playpen Sans Thai' , sans-serif;
+  font-weight: 400;
+  color: #201911;
+}
+
+header nav ul {
+  list-style: none;          
+  margin: 0;
+  padding: 0;
+  display: flex;            
+  gap: 2rem;              
+  }
+
+header nav a {
+  text-decoration: none;    
+  color: #EDE0D4;            
+  font-weight: 700;         
+  transition: 0.3s;          
+}
+
+header nav a:hover {
+  text-decoration: underline; 
+}
+
+header {
+  padding: 1rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #7F5539;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #7F5539;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;;
+}
+
+main{
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.inicio img{
+  width: 100%;
+  background-color: #7F5539;
+  border-radius: 20px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #B08968;
+  color: #EDE0D4;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  width: fit-content;   
+  margin-top: -1rem;    
+  }
+
+.card {
+  display: flex;              
+  flex-direction: column;   
+  justify-content: space-between;
+
+  background-color: #EDE0D4;
+  border: 3px solid #B08968;
+  border-radius: 30px;
+  padding: 1rem;
+  max-width: 300px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+.card img {
+  max-width: 100%;  
+  border-radius: 10px;
+  margin-top: 1rem; 
+  margin-bottom: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15); 
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.reduce-space {
+  margin-top: -0.8rem;
+  margin-bottom: 2rem;
+}
+
+.size {
+  font-size: 1.2rem;
+}
+
+.fw-400 {
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+.line-height {
+  line-height: 1.4;
+  font-size: 1rem;
+}
+
+h3{
+  font-size: 1.5rem;
+  color: #7F5539;
+  margin-bottom: 0.5rem;
+}
+
+h4{
+  font-size: 1.2rem;
+  color: #b46a09;
+  margin-bottom: 0.5rem;
+}
+
+
+/* Seção grãos */
+.img-graos {
+  width: 100%;
+  max-width: 800px; 
+  height: 600px; 
+  overflow: hidden;  
+  border-radius: 30px;
+}
+.img-graos img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
+.secao-graos {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0rem ;
+}
+
+.intro-graos {
+  text-align: start ;
+}
+.intro-graos h3 {
+  font-size: 2rem;
+  color: #7F5539;
+  margin-bottom: 0.5rem;
+}
+.intro-graos p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  margin-top: 0.5rem;;
+}
+
+
+.conteudo-graos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: top;
+}
+
+
+.img-graos img {
+  width: 100%;
+  height: 100%;
+  border-radius:30px;
+  object-fit: cover;
+}
+
+.topics-box {
+  background: #B08968;
+  border-radius: 30px;
+  padding: 2rem 3rem;
+  color: #fff;
+
+  display: grid;
+  align-content: center; 
+}
+
+.topics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem 2rem;
+}
+.topic h4 {
+    color: #7F5539;
+}
+.topic p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;;
+}
+
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .conteudo-graos {
+    grid-template-columns: 1fr;
+  }
+  .topics {
+    grid-template-columns: 1fr;
+  }
+}
+
+.sobre-nos {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.lista-contato {
+  display: flex;
+  flex-direction: row;   
+  flex-wrap: wrap;      
+  gap: 1rem 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+  color: #201911;
+}
+.lista-contato > li {
+  flex: 1 1 220px;     
+}
+
+.lista{
+  font-weight: 700;
+  font-size: 1.2rem;
+  }
+
+  .texto{
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 1.1rem;
+  }
+
+footer {
+  background-color: #7F5539;
+  color: #EDE0D4;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
